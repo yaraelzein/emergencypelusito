@@ -1,0 +1,53 @@
+* {
+    font-weight: bolder;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    position: relative;
+    top: 350px;
+}
+.button {
+    background-color: pink;
+    color:deeppink;
+    padding: 25px 35px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 30px;
+    border: lightskyblue;
+    border-style: groove;
+    border-width: 7px;
+}
+.button:hover {
+    background-color: hotpink;
+    color: lightpink;
+    cursor: pointer;
+}
+.image {
+    visibility: hidden;
+    position: absolute;
+    animation: zoom 15s linear;
+    width: 400px;
+    height: 425px;
+    
+}
+.music {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+@keyframes zoom {
+   0% {
+       opacity: 0;
+       transform: scale(0.1);
+    } 
+    100% {
+        transform: scale(1);
+    }
+}
