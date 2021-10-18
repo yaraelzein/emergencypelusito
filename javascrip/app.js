@@ -8,5 +8,3 @@ buttonElement.addEventListener("click", () => {
     gifElement.style.visibility = "visible"
 })
 
-
-
